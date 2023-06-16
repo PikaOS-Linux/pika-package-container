@@ -15,7 +15,7 @@ on:
   pull_request:
 
 env:
-  IMAGE_NAME: pika-pacakge-container
+  IMAGE_NAME: pika-package-container
 
 jobs:
   # Push image to GitHub Packages.
