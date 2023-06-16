@@ -7,6 +7,6 @@ RUN DEBIAN_FRONTEND=noninteractive add-apt-repository https://ppa.pika-os.com
 RUN DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:pikaos/pika
 RUN DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:kubuntu-ppa/backports
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade --alow-downgrades
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade --allow-downgrades
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
