@@ -2,6 +2,7 @@
 # Bump for rebuild on 26/02/2024 22:16 UTC 
 FROM ubuntu:23.10
 RUN apt-get -y update
+RUN apt-get install wget -y
 # Install Pika Apt Sources
 RUN wget https://ppa.pika-os.com/dists/pikauwu/pika-sources.deb
 RUN DEBIAN_FRONTEND=noninteractive apt-get install ./pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
