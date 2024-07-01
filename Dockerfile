@@ -1,5 +1,5 @@
 # We just want ubuntu with our apt packages already included
-# Bump for rebuild on 11/05/2024 22:16 UTC 
+# Bump for rebuild on 01/07/2024 16:51 UTC 
 FROM ubuntu:23.10
 RUN apt-get -y update
 RUN apt-get install wget -y
